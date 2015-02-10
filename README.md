@@ -70,7 +70,7 @@ The implementation of `resolve` is using all parts of this library’s API to pu
 The `URL` `Object` is also a constructor/factory for creating instances of `URL`s.
 When creating an instance, **the `new` keyword is optional**.
 
-    var url = URL('http://www.example.com');
+    var url = URL('http://www.example.com?foo=bar');
     
     // Accessor/Mutator Methods
     
@@ -108,7 +108,9 @@ Here are a few more “complex” examples of what you can do with mutation, cha
     
     // turn 'http://example.com' -> 'http://example.com/?foo=bar#baz'
     URL('http://example.com').query([['foo', 'bar']]).fragment('baz');
-    
+
+    //
+
     // build up a URL to: http://tiptheweb.org/tip/?link=https://github.com/ericf/urljs
     URL()
         .scheme('http')

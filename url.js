@@ -375,13 +375,6 @@ var BreakException = {};
             return ( arguments.length ? this._set(QUERY, query) : this._url[QUERY] );
         },
 
-        removeQuery : function (param) {
-            console.log(this._url[QUERY]);
-            delete(this._url[QUERY][param]);
-
-            return this;
-        },
-
         /**
          * Returns or sets the query of the URL.
          * This takes or returns the query as a String; doesn't include the '?'
